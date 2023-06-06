@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pfmn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-pfmn@sha256:fd7b20df4700b7978f1d29cdd11e6d8171d61910905b491cf96bb43930b27ad0
+        name: my-nodejs
+        resources: {}
+status: {}
